@@ -1,0 +1,107 @@
+#introduction {
+    /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 4rem; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#introduction > img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    justify-self: end;
+}
+
+#introduction h1 {
+    font-size: clamp(3.2rem, 2.6182rem + 1.8182vw, 4.8rem);
+    line-height: 1.25;
+    font-weight: 700;
+    grid-column: 1 / -1;
+    white-space: nowrap;
+}
+
+#introduction h1::after {
+    content: "";
+    display: block;
+    line-height: 0;
+    width: clamp(12rem, 10.1818rem + 5.6818vw, 17rem);
+    height: 2rem;
+    background: url(../assets/detail.svg) no-repeat center;
+    background-size: contain;
+    margin-left: 4%;
+}
+
+#introduction > div {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 5rem 4rem;
+}
+
+.introduction-contact-btn {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv-download {
+    color: var(--gray-50);
+    background: #0a66c2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    border-radius: 5px;
+
+    width: fit-content;
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: filter 0.3s, transform 0.3s;
+    white-space: nowrap;
+}
+
+.cv-download:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+    #introduction > div {
+        gap: 3\rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #introduction {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: end;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    #introduction {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #introduction > img {
+        display: none;
+    }
+}
