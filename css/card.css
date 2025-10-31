@@ -94,16 +94,19 @@
     z-index: 1;
 }
 .card:hover .card-text,
+.card:focus-within .card-text,
 .card.focus .card-text {
     opacity: 1;
 }
 
 .card:hover .card-img-box,
+.card:focus-within .card-img-box,
 .card.focus .card-img-box {
     box-shadow: none;
 }
 
 .card:hover .card-button,
+.card:focus-within .card-button,
 .card.focus .card-button {
     pointer-events: auto;
     transition: opacity 0.3s;
@@ -111,14 +114,17 @@
     opacity: 1;
 }
 .card:hover .card-img-box::after,
+.card:focus-within .card-img-box::after,
 .card.focus .card-img-box::after {
     transition: opacity 0.5s;
     opacity: 1;
 }
 
-.card-button:hover {
+.card-button:hover,
+.card:focus-within .card-button {
     filter: brightness(1.1);
 }
-.card-img-box:hover img {
+.card-img-box:hover img,
+.card:focus-within img {
     transform: scale(1.1);
 }
