@@ -4,8 +4,14 @@
     overflow: hidden;
     color: var(--gray-50);
 }
+
+#contact > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
 .contacts {
-    font-size: clamp(2.2rem, 1.8364rem + 1.1364vw, 3.2rem);
+    font-size: clamp(2.2rem, 1.2rem + 1.6667vw, 3.2rem);
     font-weight: 600;
 
     display: flex;
@@ -65,14 +71,23 @@
 .contact-buttons a:focus::before {
     opacity: 1;
 }
+@media (max-width: 1000px) {
+    #contact > div {
+        flex-direction: column;
+    }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    #contact > div {
+        justify-content: center;
+        gap: 6rem;
+    }
     .contacts li {
         flex-direction: column;
     }
 
-    .contacts li + li {
-        padding-top: 4rem ;
+    .contacts li {
+        padding-top: 4rem;
         border-top: 1px solid #fff;
     }
 }

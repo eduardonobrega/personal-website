@@ -1,0 +1,88 @@
+.home-feedback {
+}
+.home-feedback-item {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 0.6rem 1.2rem;
+}
+.home-feedback-item blockquote {
+    max-width: 30ch;
+    display: -webkit-box; /* define um container flexível */
+    -webkit-line-clamp: 2; /* limita a 2 linhas */
+    -webkit-box-orient: vertical; /* orienta o box na vertical */
+    overflow: hidden; /* corta o texto excedente */
+    text-overflow: ellipsis; /* adiciona "..." */
+
+    color: var(--gray-500);
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.home-feedback-author {
+    grid-column: 2;
+    font-size: 1rem;
+    color: var(--gray-700);
+}
+
+.home-feedback-author strong {
+    font-weight: 700;
+    color: var(--gray-600);
+}
+
+.home-feedback-item img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.home-feedback-buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.home-feedback-buttons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.home-feedback-buttons button:first-child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    transition: filter 0.3s;
+}
+
+.home-feedback-buttons button:first-child:hover {
+    filter: brightness(1.5);
+}
+
+.home-feedback-buttons button:last-child {
+    color: var(--gray-700);
+    font-size: 1rem;
+
+    display: block;
+    margin-top: 6px;
+}
+
+.home-feedback-buttons button:last-child:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .home-feedback {
+        align-self: center;
+    }
+
+    .home-feedback-buttons {
+        align-items: center;
+    }
+}

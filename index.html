@@ -28,7 +28,9 @@
         </header>
 
         <main id="introduction" class="main-container">
-            <img src="./assets/perfil.jpg" alt="Foto de perfil do Eduardo" width="300" height="300" />
+            <figure>
+                <img src="./assets/perfil.jpg" alt="Foto de perfil do Eduardo" width="300" height="300" />
+            </figure>
 
             <div>
                 <h1>
@@ -221,7 +223,40 @@
 
         <section id="contact" aria-label="Contato">
             <div class="main-container">
-                <div class="feedback"></div>
+                <!-- Feedback -->
+                <div class="home-feedback">
+                    <div class="home-feedback-item">
+                        <figure>
+                            <img
+                                src="http://github.com/eduardonobrega.png"
+                                alt="Foto de perfil do Eduardo"
+                                width="40"
+                                height="40"
+                            />
+                        </figure>
+
+                        <blockquote>
+                            “Trabalhei com Eduardo e aprendi a criar um projeto de ponta a ponta. Fizemos juntos desde o
+                            inicio começando pelo design do projeto, em seguida fizemos o front end con react e o back
+                            end com node.”
+                        </blockquote>
+
+                        <div class="home-feedback-author">
+                            <strong>João Silva</strong>
+                            <span>Desenvolvedor Front-end</span>
+                        </div>
+                    </div>
+
+                    <div class="home-feedback-buttons">
+                        <button>
+                            Deixe seu Feedback
+                            <iconify-icon icon="mynaui:click" width="24" height="24"></iconify-icon>
+                        </button>
+                        <button>Veja todos os feedbacks</button>
+                    </div>
+                </div>
+
+                <!-- Lista de contato -->
                 <ul class="contacts">
                     <li>
                         eduardo.nobrrega@gmail.com
