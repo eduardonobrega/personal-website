@@ -56,7 +56,7 @@ body {
     flex-direction: column;
     gap: 12rem;
 
-    color: var(--gray-975);
+    color: var(--gray-950);
 }
 
 a {
