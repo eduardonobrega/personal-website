@@ -1,0 +1,78 @@
+#contact {
+    background-color: var(--gray-950);
+    padding: 12rem 0;
+    overflow: hidden;
+    color: var(--gray-50);
+}
+.contacts {
+    font-size: clamp(2.2rem, 1.8364rem + 1.1364vw, 3.2rem);
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4rem;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.contact-buttons a {
+    color: white;
+    background: linear-gradient(180deg, #7b5fff, #442cb3);
+
+    border: none;
+    border-radius: 1.2rem;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s;
+
+    position: relative;
+}
+
+.contact-buttons a::before {
+    content: attr(title);
+    position: absolute;
+    display: block;
+
+    font-size: 1.2rem;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    opacity: 0.2;
+}
+
+.contact-buttons a:hover,
+.contact-buttons a:focus {
+    transform: scale(1.1);
+}
+.contact-buttons a:hover::before,
+.contact-buttons a:focus::before {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .contacts li {
+        flex-direction: column;
+    }
+
+    .contacts li + li {
+        padding-top: 4rem ;
+        border-top: 1px solid #fff;
+    }
+}
