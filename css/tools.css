@@ -1,6 +1,7 @@
 #tools {
     background-color: var(--gray-950);
     padding: 12rem 0;
+    overflow: hidden;
 }
 
 #tools > div {
@@ -53,7 +54,7 @@
     content: attr(data-name);
     border-radius: 2rem;
     width: max-content;
-
+    font-size: 1rem;
     background-color: var(--gray-50);
     border: 1px solid var(--gray-200);
     padding: 0.5rem 1rem;
@@ -68,12 +69,11 @@
 }
 
 .tool:hover {
-  
     transform: scale(1.1);
 }
 
 .tool:hover::before {
-      display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
