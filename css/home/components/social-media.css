@@ -1,0 +1,27 @@
+.social-media {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    position: relative;
+}
+
+.social-media a iconify-icon {
+    color: var(--gray-500);
+    transition: color 0.3s;
+}
+
+.social-media a:hover iconify-icon,
+.social-media a:focus iconify-icon {
+    color: var(--primary-color);
+}
+
+.message-link {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.message-link:hover,
+.message-link:focus {
+    opacity: 1;
+}

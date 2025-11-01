@@ -1,0 +1,51 @@
+.tool {
+    background: var(--gray-950);
+    border-radius: 2rem;
+    border: 1px solid var(--gray-800);
+    box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.2);
+
+    padding: 2rem;
+
+    display: flex;
+    place-items: center;
+    position: relative;
+
+    width: 8rem;
+    height: 8rem;
+
+    transition: transform 0.3s;
+}
+
+.tool::before {
+    content: attr(data-name);
+    border-radius: 2rem;
+    width: max-content;
+    font-size: 1rem;
+    background-color: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    padding: 0.5rem 1rem;
+
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: none;
+}
+
+.tool:hover {
+    transform: scale(1.1);
+}
+
+.tool:hover::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+}
+
+.tool iconify-icon {
+    font-size: 4rem;
+}

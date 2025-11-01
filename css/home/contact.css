@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    order: 1;
 }
 
 .contacts li {
@@ -31,73 +32,6 @@
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-}
-
-.contact-buttons a {
-    color: white;
-    background: linear-gradient(180deg, #7b5fff, #442cb3);
-
-    border: none;
-    border-radius: 1.2rem;
-    padding: 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: transform 0.3s;
-
-    position: relative;
-}
-
-.contact-buttons a::before {
-    content: attr(title);
-    position: absolute;
-    display: block;
-
-    font-size: 1.2rem;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max-content;
-    opacity: 0.2;
-}
-
-.contact-buttons a:hover,
-.contact-buttons a:focus {
-    transform: scale(1.1);
-}
-.contact-buttons a:hover::before,
-.contact-buttons a:focus::before {
-    opacity: 1;
-}
-
-.social-media {
-    margin-top: 8rem;
-    display: flex;
-    justify-content: end;
-    gap: 2rem;
-    position: relative;
-}
-
-.social-media a iconify-icon {
-    color: var(--gray-500);
-    transition: color 0.3s;
-}
-
-.social-media a:hover iconify-icon,
-.social-media a:focus iconify-icon {
-    color: var(--primary-color) ;
-}
-
-.message-link {
-    position: absolute;
-    opacity: 0;
-    transition: opacity .5s;
-}
-
-.message-link:hover {
-    opacity: 1;
 }
 
 @media (max-width: 1000px) {

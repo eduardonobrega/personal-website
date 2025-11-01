@@ -1,10 +1,4 @@
 #introduction {
-    /* display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    gap: 4rem; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -33,7 +27,7 @@
     line-height: 0;
     width: clamp(12rem, 10.1818rem + 5.6818vw, 17rem);
     height: 2rem;
-    background: url(../../assets/detail.svg) no-repeat center;
+    background: url(../assets/detail.svg) no-repeat center;
     background-size: contain;
     margin-left: 4%;
 }
