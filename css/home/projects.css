@@ -5,6 +5,7 @@
 #projects header {
     display: flex;
     align-items: center;
+    gap: 4rem;
     justify-content: space-between;
 }
 
@@ -38,26 +39,41 @@
 .carousel-buttons button.end {
     opacity: 0.5;
 }
-
-#projects > ul {
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    /* padding: 2rem 0; */
+}
+.carousel-track {
     display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
     align-items: center;
-    gap: 4rem;
-
     margin-top: 6rem;
+
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
-#projects > footer {
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-container > footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: ". indicators allprojects";
     justify-items: center;
 
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
 }
 
-#projects > footer > a {
-    font-size: 2rem;
+.carousel-container > footer > a {
+    font-size: clamp(1.8rem, 1.7273rem + 0.2273vw, 2rem);
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -65,8 +81,8 @@
     justify-self: end;
 }
 
-#projects > footer > a:hover,
-#projects > footer > a:focus {
+.carousel-container > footer > a:hover,
+.carousel-container > footer > a:focus {
     text-decoration: underline;
 }
 
@@ -90,4 +106,14 @@
 
 .carousel-indicators button.current {
     background: linear-gradient(180deg, #7b5fff, #442cb3);
+}
+
+
+@media (max-width: 700px) {
+    .carousel-container > footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
 }
