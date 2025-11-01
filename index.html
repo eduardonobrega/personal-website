@@ -15,6 +15,7 @@
 
         <title>Eduardo Nóbrega | DEV WEB</title>
     </head>
+
     <body>
         <header class="main-container main-header">
             <img src="./assets/logo.svg" alt="Logo com nome Eduardo e um sublinhado roxo" width="252" height="48" />
@@ -27,7 +28,7 @@
             </nav>
         </header>
 
-        <main id="introduction" class="main-container">
+        <main id="introduction" class="main-container padding-container">
             <figure>
                 <img src="./assets/perfil.jpg" alt="Foto de perfil do Eduardo" width="300" height="300" />
             </figure>
@@ -117,7 +118,7 @@
             </ul>
         </section> -->
 
-        <section id="tools" aria-label="Ferramentas">
+        <section id="tools" aria-label="Ferramentas" class="padding-container">
             <div class="main-container">
                 <div>
                     <h2>
@@ -159,7 +160,7 @@
             </div>
         </section>
 
-        <section id="services" aria-label="Serviços" class="main-container">
+        <section id="services" aria-label="Serviços" class="main-container padding-container">
             <h2>Serviços</h2>
             <p>
                 Desenvolvo sites e aplicações web que unem beleza, performance e propósito.
@@ -223,65 +224,102 @@
 
         <section id="contact" aria-label="Contato">
             <div class="main-container">
-                <!-- Feedback -->
-                <div class="home-feedback">
-                    <div class="home-feedback-item">
-                        <figure>
-                            <img
-                                src="http://github.com/eduardonobrega.png"
-                                alt="Foto de perfil do Eduardo"
-                                width="40"
-                                height="40"
-                            />
-                        </figure>
+                <div>
+                    <!-- Feedback -->
+                    <div class="home-feedback">
+                        <div class="home-feedback-item">
+                            <figure>
+                                <img
+                                    src="http://github.com/eduardonobrega.png"
+                                    alt="Foto de perfil do Eduardo"
+                                    width="40"
+                                    height="40"
+                                />
+                            </figure>
 
-                        <blockquote>
-                            “Trabalhei com Eduardo e aprendi a criar um projeto de ponta a ponta. Fizemos juntos desde o
-                            inicio começando pelo design do projeto, em seguida fizemos o front end con react e o back
-                            end com node.”
-                        </blockquote>
+                            <blockquote>
+                                “Trabalhei com Eduardo e aprendi a criar um projeto de ponta a ponta. Fizemos juntos
+                                desde o inicio começando pelo design do projeto, em seguida fizemos o front end con
+                                react e o back end com node.”
+                            </blockquote>
 
-                        <div class="home-feedback-author">
-                            <strong>João Silva</strong>
-                            <span>Desenvolvedor Front-end</span>
+                            <div class="home-feedback-author">
+                                <strong>João Silva</strong>
+                                <span>Desenvolvedor Front-end</span>
+                            </div>
+                        </div>
+
+                        <div class="home-feedback-buttons">
+                            <button>
+                                Deixe seu Feedback
+                                <iconify-icon icon="mynaui:click" width="24" height="24"></iconify-icon>
+                            </button>
+                            <button>Veja todos os feedbacks</button>
                         </div>
                     </div>
 
-                    <div class="home-feedback-buttons">
-                        <button>
-                            Deixe seu Feedback
-                            <iconify-icon icon="mynaui:click" width="24" height="24"></iconify-icon>
-                        </button>
-                        <button>Veja todos os feedbacks</button>
-                    </div>
+                    <!-- Lista de contato -->
+                    <ul class="contacts">
+                        <li>
+                            eduardo.nobrrega@gmail.com
+                            <div class="contact-buttons">
+                                <a href="" title="Copiar">
+                                    <iconify-icon icon="solar:copy-outline" width="24" height="24"></iconify-icon>
+                                </a>
+                                <a href="" title="Enviar email">
+                                    <iconify-icon
+                                        icon="garden:new-window-stroke-12"
+                                        width="24"
+                                        height="24"
+                                    ></iconify-icon>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            +55 (87) 98829-4287
+                            <div class="contact-buttons">
+                                <a href="" title="Copiar">
+                                    <iconify-icon icon="solar:copy-outline" width="24" height="24"></iconify-icon>
+                                </a>
+                                <a href="" title="Enviar whats">
+                                    <iconify-icon
+                                        icon="garden:new-window-stroke-12"
+                                        width="24"
+                                        height="24"
+                                    ></iconify-icon>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Lista de contato -->
-                <ul class="contacts">
+                <ul class="social-media">
                     <li>
-                        eduardo.nobrrega@gmail.com
-                        <div class="contact-buttons">
-                            <a href="" title="Copiar">
-                                <iconify-icon icon="solar:copy-outline" width="24" height="24"></iconify-icon>
-                            </a>
-                            <a href="" title="Enviar email">
-                                <iconify-icon icon="garden:new-window-stroke-12" width="24" height="24"></iconify-icon>
-                            </a>
-                        </div>
+                        <a href="https://github.com/eduardonobrega" target="_blank" rel="external">
+                            <iconify-icon
+                                icon="ri:linkedin-fill"
+                                width="40"
+                                height="40"
+                                title="Linkedin"
+                            ></iconify-icon>
+                        </a>
                     </li>
                     <li>
-                        +55 (87) 98829-4287
-                        <div class="contact-buttons">
-                            <a href="" title="Copiar">
-                                <iconify-icon icon="solar:copy-outline" width="24" height="24"></iconify-icon>
-                            </a>
-                            <a href="" title="Enviar whats">
-                                <iconify-icon icon="garden:new-window-stroke-12" width="24" height="24"></iconify-icon>
-                            </a>
-                        </div>
+                        <a href="">
+                            <iconify-icon
+                                icon="mdi:github"
+                                style="color: #fafafa"
+                                width="40"
+                                height="40"
+                                title="Github"
+                            ></iconify-icon>
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
+        <footer>
+            <p>© 2025 Eduardo Nóbrega. Desenvolvido por mim.</p>
+        </footer>
     </body>
 </html>
