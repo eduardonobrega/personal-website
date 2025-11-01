@@ -1,5 +1,5 @@
 #projects {
-    margin-bottom: 12rem;
+    padding: 12rem 0;
 }
 
 #projects header {
@@ -39,10 +39,55 @@
     opacity: 0.5;
 }
 
-#projects ul {
+#projects > ul {
     display: flex;
     align-items: center;
     gap: 4rem;
 
     margin-top: 6rem;
+}
+
+#projects > footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". indicators allprojects";
+    justify-items: center;
+
+    margin-top: 15rem;
+}
+
+#projects > footer > a {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    grid-area: allprojects;
+    justify-self: end;
+}
+
+#projects > footer > a:hover,
+#projects > footer > a:focus {
+    text-decoration: underline;
+}
+
+.carousel-indicators button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #e3c9ff;
+    cursor: pointer;
+}
+
+.carousel-indicators button:not(.current):hover {
+    background-color: #8c6caa;
+}
+.carousel-indicators {
+    grid-area: indicators;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.carousel-indicators button.current {
+    background: linear-gradient(180deg, #7b5fff, #442cb3);
 }

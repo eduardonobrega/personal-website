@@ -9,6 +9,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 15rem 0 3rem;
 }
 
 #introduction img {

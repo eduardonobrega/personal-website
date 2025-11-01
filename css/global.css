@@ -31,6 +31,10 @@
     outline-color: var(--primary-color);
 }
 
+html {
+    scroll-behavior: smooth; /* rolagem suave */
+}
+
 img,
 picture,
 svg,
