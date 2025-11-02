@@ -1,0 +1,17 @@
+.tech-item {
+    color: var(--gray-800);
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    border-radius: 2rem;
+    border: 1px solid var(--gray-400);
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+ 

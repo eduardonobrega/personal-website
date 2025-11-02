@@ -1,0 +1,69 @@
+main a {
+    transition: filter 0.3s;
+}
+
+.close-btn {
+    position: fixed;
+    top: 1rem;
+    right: 5vw;
+}
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+
+    margin: 4rem 0 6rem;
+}
+
+.project-buttons a {
+    color: var(--gray-50);
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+main a:hover,
+main a:focus {
+    filter: brightness(1.1);
+}
+
+.github-btn {
+    background: linear-gradient(#7b5fff, #442cb3);
+}
+
+.online-btn {
+    background: linear-gradient(#a5cc6f, #6d913b);
+}
+
+.contact-btn {
+    color: var(--gray-50);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    text-transform: uppercase;
+
+    border-radius: 1rem;
+    padding: 0.8rem 1.6rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    display: block;
+    margin: 6rem auto 0;
+    width: fit-content;
+}
+
+@media (max-width: 600px) {
+    .close-btn {
+        transform: scale(0.8);
+        top: 2rem;
+        right: 5vw;
+    }
+}
