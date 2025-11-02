@@ -1,0 +1,47 @@
+@import url(../../styles/global.css);
+
+header {
+    height: 12rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+main {
+    width: min(90vw, 650px);
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+h1 {
+    color: #7b5fff;
+    font-size: clamp(3.2rem, 0.097rem + 9.697vw, 6.4rem);
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+p {
+    font-size: clamp(1.6rem, 1.4061rem + 0.6061vw, 1.8rem);
+    color: var(--gray-800);
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+p + p {
+    margin-top: 3rem;
+}
+
+p strong {
+    font-weight: 700;
+    color: var(--gray-950);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    cursor: pointer;
+}

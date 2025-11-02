@@ -1,0 +1,19 @@
+.close-btn {
+    width: 4rem;
+    height: 4rem;
+    background-color: #c3b7ff;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+
+    box-shadow: 0 8px 0px #907dee, 0 8px 2px rgba(77, 50, 204, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.close-btn:hover {
+    transform: translateY(4px);
+    box-shadow: 0 0px 0px #907dee, 0 8px 2px rgba(77, 50, 204, 0.1);
+}
