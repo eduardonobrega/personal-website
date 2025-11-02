@@ -3,6 +3,11 @@
 @import url(input.css);
 @import url(comment.css);
 
+.close-btn {
+    position: fixed;
+    top: 4rem;
+    right: 8vw;
+}
 body {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -81,5 +86,13 @@ section {
 
     .comment-list {
         padding-top: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .close-btn {
+        transform: scale(0.8);
+        top: 2rem;
+        right: 5vw;
     }
 }
