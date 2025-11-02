@@ -42,13 +42,11 @@
     align-items: start;
 }
 
-.home-feedback-buttons button {
-    border: none;
-    background: none;
+.home-feedback-buttons a {
     cursor: pointer;
 }
 
-.home-feedback-buttons button:first-child {
+.home-feedback-buttons a:first-child {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -59,11 +57,11 @@
     transition: filter 0.3s;
 }
 
-.home-feedback-buttons button:first-child:hover {
+.home-feedback-buttons a:first-child:hover {
     filter: brightness(1.5);
 }
 
-.home-feedback-buttons button:last-child {
+.home-feedback-buttons a:last-child {
     color: var(--gray-700);
     font-size: 1rem;
 
@@ -71,7 +69,7 @@
     margin-top: 6px;
 }
 
-.home-feedback-buttons button:last-child:hover {
+.home-feedback-buttons a:last-child:hover {
     text-decoration: underline;
 }
 
