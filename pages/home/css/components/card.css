@@ -24,7 +24,7 @@
 }
 
 .card-img-box::after {
-    content: url(../../../assets/rectangle.svg);
+    content: url(../../../../assets/rectangle.svg);
     display: block;
     width: 15rem;
     height: 5.5rem;
