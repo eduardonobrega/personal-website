@@ -1,0 +1,52 @@
+.comment header {
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.comment header > div {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.comment img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.comment time {
+    color: var(--gray-600);
+    font-size: 1.2rem;
+}
+
+.author {
+    color: var(--gray-700);
+    font-weight: 500;
+}
+
+.job {
+    color: var(--gray-500);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: end;
+
+    margin-top: 2rem;
+
+    display: block;
+}
+
+.comment + .comment {
+    padding-top: 2rem;
+    border-top: 2px solid var(--gray-300);
+}
+
+.comment:last-child {
+    padding-bottom: 4rem;
+}

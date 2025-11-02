@@ -1,6 +1,15 @@
 @import url(../../../styles/global.css);
 @import url(../../../styles/components/close-btn.css);
 @import url(input.css);
+@import url(comment.css);
+
+body {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
 
 form {
     max-width: 480px;
@@ -32,4 +41,45 @@ form button {
 form button:hover,
 form button:focus {
     filter: brightness(1.2);
+}
+
+section {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    max-width: 560px;
+    height: 100%;
+    padding-top: 12rem;
+}
+
+@media (max-width: 1099px) {
+    body {
+        height: 100%;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        min-height: fit-content;
+        margin: 0 auto;
+    }
+
+    section {
+        width: min(90vw, 560px);
+        margin: 0 auto;
+    }
+
+    .comment-list {
+        padding-top: 6rem;
+    }
 }
