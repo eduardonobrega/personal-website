@@ -1,4 +1,5 @@
 @import url(../../styles/global.css);
+@import url(../../styles/components/close-btn.css);
 
 header {
     height: 12rem;
