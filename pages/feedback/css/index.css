@@ -1,0 +1,35 @@
+@import url(../../../styles/global.css);
+@import url(../../../styles/components/close-btn.css);
+@import url(input.css);
+
+form {
+    max-width: 480px;
+    padding: 4rem;
+    background-color: var(--gray-200);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form button {
+    color: #dde9ff;
+    background-color: #3974ca;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+    border: 1px solid #234eaa;
+
+    padding: 1.2rem 2.4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+
+    transition: filter 0.3s;
+}
+
+form button:hover,
+form button:focus {
+    filter: brightness(1.2);
+}
