@@ -21,7 +21,6 @@
 }
 .service-card p {
     color: var(--gray-700);
-    line-height: 1.5;
     margin: 2rem 0 4rem;
 }
 

@@ -8,7 +8,6 @@
 
 #services p {
     color: var(--gray-800);
-    line-height: 1.5;
     margin-top: 2rem;
     max-width: 45 ch;
 }

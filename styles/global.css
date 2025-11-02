@@ -67,6 +67,9 @@ a {
 ul {
     list-style: none;
 }
+p {
+    line-height: 1.5;
+}
 
 .main-container {
     width: min(90vw, 1200px);
