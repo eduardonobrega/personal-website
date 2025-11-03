@@ -1,6 +1,12 @@
 @import url(../../styles/global.css);
 @import url(../../styles/components/close-btn.css);
 
+.close-btn {
+    position: fixed;
+    top: 1rem;
+    right: 5vw;
+}
+
 header {
     height: 12rem;
     display: flex;

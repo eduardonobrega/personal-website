@@ -13,7 +13,8 @@
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
     transform: translateY(4px);
     box-shadow: 0 0px 0px #907dee, 0 8px 2px rgba(77, 50, 204, 0.1);
 }
