@@ -6,14 +6,14 @@
     position: relative;
 }
 
-.social-media a iconify-icon {
+.social-media a svg path {
     color: var(--gray-500);
-    transition: color 0.3s;
+    transition: fill 0.3s;
 }
 
-.social-media a:hover iconify-icon,
-.social-media a:focus iconify-icon {
-    color: var(--primary-color);
+.social-media li:not(:last-child):hover svg path,
+.social-media li:not(:last-child):focus svg path {
+    fill: var(--primary-color);
 }
 
 .message-link {

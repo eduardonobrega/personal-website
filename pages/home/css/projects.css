@@ -22,6 +22,10 @@
     gap: 1rem;
 }
 
+.carousel-buttons button:first-child {
+    transform: rotate(180deg);
+}
+
 .carousel-buttons button {
     color: var(--primary-color);
     background-color: var(--gray-300);
@@ -107,7 +111,6 @@
 .carousel-indicators button.current {
     background: linear-gradient(180deg, #7b5fff, #442cb3);
 }
-
 
 @media (max-width: 700px) {
     .carousel-container > footer {

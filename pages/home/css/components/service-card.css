@@ -9,8 +9,7 @@
     max-width: 36rem;
 }
 
-.service-card iconify-icon {
-    color: var(--gray-900);
+.service-card img {
     margin: 1.6rem 0 4rem 1.6rem;
 }
 

@@ -1,6 +1,10 @@
 label {
     color: var(--gray-900);
     font-weight: 500;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .required {

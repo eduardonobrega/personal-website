@@ -16,7 +16,7 @@
     scroll-snap-align: center;
 }
 
-.card-img-box img {
+.card-img-box > img {
     border-radius: 2rem;
 
     object-fit: cover;
@@ -60,7 +60,7 @@
     pointer-events: none; /* impede clique enquanto escondido */
 }
 
-.card-button iconify-icon {
+.card-button img {
     transform: rotate(-90deg);
 }
 
@@ -115,7 +115,7 @@
 .card:focus-within .card-button {
     filter: brightness(1.1);
 }
-.card-img-box:hover img,
-.card:focus-within img {
+.card-img-box:hover > img,
+.card:focus-within .card-img-box > img {
     transform: scale(1.1);
 }
