@@ -16,7 +16,7 @@
     </head>
     <body>
         <a href="../../index.html" class="close-btn" onclick="if (document.referrer) { history.back(); return false; }">
-            <img src="../../assets/icons/close.svg" width="30" height="30" alt="ícone de um x" />
+            <img src="../../assets/icons/close.svg" width="30" height="30" alt="ícone de um x" loading="lazy" />
         </a>
         <main>
             <h1>Mundo pet</h1>
@@ -29,6 +29,7 @@
                         alt="ícone de tecnologia"
                         width="14"
                         height="14"
+                        loading="lazy"
                     />
                     javascript
                 </li>
@@ -38,24 +39,49 @@
                         alt="ícone de tecnologia"
                         width="14"
                         height="14"
+                        loading="lazy"
                     />
                     typescript
                 </li>
                 <li class="tech-item">
-                    <img src="../../assets/tech-icons/nodejs.svg" alt="ícone de tecnologia" width="14" height="14" />
+                    <img
+                        src="../../assets/tech-icons/nodejs.svg"
+                        alt="ícone de tecnologia"
+                        width="14"
+                        height="14"
+                        loading="lazy"
+                    />
                     nodejs
                 </li>
                 <li class="tech-item">
-                    <img src="../../assets/tech-icons/react.svg" alt="ícone de tecnologia" width="14" height="14" />
+                    <img
+                        src="../../assets/tech-icons/react.svg"
+                        alt="ícone de tecnologia"
+                        width="14"
+                        height="14"
+                        loading="lazy"
+                    />
                     react
                 </li>
 
                 <li class="tech-item">
-                    <img src="../../assets/tech-icons/html.svg" alt="ícone de tecnologia" width="14" height="14" />
+                    <img
+                        src="../../assets/tech-icons/html.svg"
+                        alt="ícone de tecnologia"
+                        width="14"
+                        height="14"
+                        loading="lazy"
+                    />
                     html
                 </li>
                 <li class="tech-item">
-                    <img src="../../assets/tech-icons/css.svg" alt="ícone de tecnologia" width="14" height="14" />
+                    <img
+                        src="../../assets/tech-icons/css.svg"
+                        alt="ícone de tecnologia"
+                        width="14"
+                        height="14"
+                        loading="lazy"
+                    />
                     css
                 </li>
             </ul>
@@ -68,7 +94,13 @@
                     rel="noopener noreferrer"
                 >
                     Ver código
-                    <img src="../../assets/tech-icons/github.svg" alt="ícone de tecnologia" width="24" height="24" />
+                    <img
+                        src="../../assets/tech-icons/github.svg"
+                        alt="ícone de tecnologia"
+                        width="24"
+                        height="24"
+                        loading="lazy"
+                    />
                 </a>
                 <a
                     href="https://github.com/eduardonobrega"
@@ -77,7 +109,13 @@
                     rel="noopener noreferrer"
                 >
                     Ver online
-                    <img src="../../assets/icons/web.svg" alt="ícone de tecnologia" width="24" height="24" />
+                    <img
+                        src="../../assets/icons/web.svg"
+                        alt="ícone de tecnologia"
+                        width="24"
+                        height="24"
+                        loading="lazy"
+                    />
                 </a>
             </div>
 
@@ -115,23 +153,35 @@
             <div>
                 <div class="gallery">
                     <figure>
-                        <img src="./telas/tela-1.jpg" alt="Tela inicial do sistema de agendamentos" />
+                        <div class="img-wrapper">
+                            <img
+                                src="../../assets/projects/github/screen-1.webp"
+                                alt="Tela inicial do sistema de agendamentos"
+                                loading="lazy"
+                            />
+                        </div>
+
                         <figcaption>Tela inicial</figcaption>
                     </figure>
                     <figure>
-                        <img src="./telas/tela-2.jpg" alt="Tela de agendamentos" />
+                        <div class="img-wrapper">
+                            <img
+                                src="../../assets/projects/github/screen-2.webp"
+                                alt="Tela de agendamentos"
+                                loading="lazy"
+                            />
+                        </div>
                         <figcaption>Agendamento</figcaption>
                     </figure>
                     <figure>
-                        <img src="./telas/tela-2.jpg" alt="Tela de agendamentos" />
-                        <figcaption>Agendamento</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./telas/tela-2.jpg" alt="Tela de agendamentos" />
-                        <figcaption>Agendamento</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./telas/tela-2.jpg" alt="Tela de agendamentos" />
+                        <div class="img-wrapper mobile-screen">
+                            <img
+                                src="../../assets/projects/github/screen-3.webp"
+                                alt="Tela de agendamentos"
+                                loading="lazy"
+                                class=""
+                            />
+                        </div>
                         <figcaption>Agendamento</figcaption>
                     </figure>
                 </div>

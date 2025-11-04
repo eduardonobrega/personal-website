@@ -11,6 +11,8 @@
     max-width: 30rem;
     height: auto;
     justify-self: end;
+    border-radius: 10rem;
+    object-fit: cover;
 }
 
 #introduction h1 {
