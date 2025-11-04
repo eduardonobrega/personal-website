@@ -10,13 +10,13 @@
             rel="stylesheet"
         />
         <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
-
-        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="preload" href="./css/index.min.css" as="style" />
+        <link rel="stylesheet" href="./css/index.min.css" />
         <title>Eduardo Nóbrega | Feedbacks</title>
     </head>
     <body>
         <a href="../../index.html" class="close-btn">
-            <img src="../../assets/icons/close.svg" width="30" height="30" alt="ícone de um x"  loading="lazy"/>
+            <img src="../../assets/icons/close.svg" width="30" height="30" alt="ícone de um x" loading="lazy" />
         </a>
         <form>
             <div class="input-wrapper">
@@ -87,7 +87,13 @@
                 <li class="comment">
                     <header>
                         <div>
-                            <img src="../../assets/icons/user.svg" alt="Foto de perfil" width="40" height="40" loading="lazy" />
+                            <img
+                                src="../../assets/icons/user.svg"
+                                alt="Foto de perfil"
+                                width="40"
+                                height="40"
+                                loading="lazy"
+                            />
                             <span class="author">João da silva</span>
                         </div>
                         <time datetime="">Out 2025</time>
