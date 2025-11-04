@@ -3,13 +3,26 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfólio de Eduardo Nóbrega — Desenvolvedor Web Full Stack. Crio sites e aplicações web modernas, rápidas e acessíveis, unindo design e tecnologia."
+        />
+
+        <meta property="og:title" content="Eduardo Nóbrega | Desenvolvedor Web Full Stack" />
+        <meta property="og:description" content="Crio sites e aplicações web modernas, rápidas e acessíveis." />
+        <!-- <meta property="og:image" content="https://seu-dominio.com/assets/preview.png" />
+        <meta property="og:url" content="https://seu-dominio.com/" />
+        <meta name="twitter:card" content="summary_large_image" /> -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
+        <!-- <link rel="canonical" href="https://eduardonobrega.com/" /> -->
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+        <link rel="preload" href="pages/home/css/index.css" as="style" />
         <link rel="stylesheet" href="pages/home/css/index.css" />
 
         <title>Eduardo Nóbrega | DEV WEB</title>
@@ -26,9 +39,9 @@
             />
             <nav>
                 <ul>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#projects" aria-label="Ir para a seção de projetos">Projetos</a></li>
+                    <li><a href="#services" aria-label="Ir para a seção de serviços">Serviços</a></li>
+                    <li><a href="#contact" aria-label="Ir para a seção de contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,45 +63,27 @@
                     <br />
                     Full Stack
                 </h1>
-                <a href="#contact" class="introduction-contact-btn">
+                <a href="#contact" class="introduction-contact-btn" aria-label="Ir para a seção de contato">
                     Fale comigo
-                    <img
-                        src="./assets/icons/arrow-cool.svg"
-                        alt="seta para baixo"
-                        width="24"
-                        height="24"
-                        loading="lazy"
-                    />
+                    <img src="./assets/icons/arrow-cool.svg" alt="" width="24" height="24" loading="lazy" />
                 </a>
-                <a href="" class="cv-download">
+                <a href="" class="cv-download" aria-label="Baixar curriculum">
                     Baixar cv
-                    <img src="./assets/icons/cloud.svg" alt="Nuvem" width="16" height="14" loading="lazy" />
+                    <img src="./assets/icons/cloud.svg" alt="" width="16" height="14" loading="lazy" />
                 </a>
             </div>
         </main>
 
-        <section id="projects" class="main-container" aria-label="Projetos">
+        <section id="projects" class="main-container" aria-label="Projetos em destaque" role="region">
             <div class="carousel-container">
                 <header>
                     <h2>Projetos em destaque</h2>
                     <div class="carousel-buttons">
-                        <button class="end">
-                            <img
-                                src="./assets/icons/arrow-bold.svg"
-                                alt="Seta para a esquerda"
-                                width="20"
-                                height="20"
-                                loading="lazy"
-                            />
+                        <button class="end" aria-label="Ir para o projeto anterior no carrocel">
+                            <img src="./assets/icons/arrow-bold.svg" alt="" width="20" height="20" loading="lazy" />
                         </button>
-                        <button>
-                            <img
-                                src="./assets/icons/arrow-bold.svg"
-                                alt="Seta para a direita"
-                                width="20"
-                                height="20"
-                                loading="lazy"
-                            />
+                        <button aria-label="Ir para o próximo projeto no carrocel">
+                            <img src="./assets/icons/arrow-bold.svg" alt="" width="20" height="20" loading="lazy" />
                         </button>
                     </div>
                 </header>
@@ -96,10 +91,26 @@
                 <ul class="carousel-track">
                     <li class="card focus">
                         <div class="card-img-box">
-                            <img src="assets/projects/github/cover.webp" alt="" width="300" height="300" loading="lazy" />
-                            <a href="./pages/projects/index.html" class="card-button">
+                            <img
+                                src="assets/projects/github/cover.webp"
+                                alt="Capa do projeto"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            />
+                            <a
+                                href="./pages/projects/index.html"
+                                class="card-button"
+                                aria-label="Ver mais informações sobre o projeto"
+                            >
                                 Ver mais
-                                <img src="./assets/icons/arrow-cool-white.svg" width="18" height="18" loading="lazy" />
+                                <img
+                                    src="./assets/icons/arrow-cool-white.svg"
+                                    width="18"
+                                    height="18"
+                                    loading="lazy"
+                                    alt=""
+                                />
                             </a>
                         </div>
                         <div class="card-text">
@@ -109,10 +120,26 @@
                     </li>
                     <li class="card">
                         <div class="card-img-box">
-                            <img src="assets/projects/github/cover.webp" alt="" width="300" height="300" loading="lazy" />
-                            <a href="./pages/projects/index.html" class="card-button">
+                            <img
+                                src="assets/projects/github/cover.webp"
+                                alt="Capa do projeto"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            />
+                            <a
+                                href="./pages/projects/index.html"
+                                class="card-button"
+                                aria-label="Ver mais informações sobre o projeto"
+                            >
                                 Ver mais
-                                <img src="./assets/icons/arrow-cool-white.svg" width="18" height="18" loading="lazy" />
+                                <img
+                                    src="./assets/icons/arrow-cool-white.svg"
+                                    width="18"
+                                    height="18"
+                                    loading="lazy"
+                                    alt=""
+                                />
                             </a>
                         </div>
                         <div class="card-text">
@@ -122,10 +149,26 @@
                     </li>
                     <li class="card">
                         <div class="card-img-box">
-                            <img src="assets/projects/github/cover.webp" alt="" width="300" height="300" loading="lazy" />
-                            <a href="./pages/projects/index.html" class="card-button">
+                            <img
+                                src="assets/projects/github/cover.webp"
+                                alt="Capa do projeto"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            />
+                            <a
+                                href="./pages/projects/index.html"
+                                class="card-button"
+                                aria-label="Ver mais informações sobre o projeto [name]"
+                            >
                                 Ver mais
-                                <img src="./assets/icons/arrow-cool-white.svg" width="18" height="18" loading="lazy" />
+                                <img
+                                    src="./assets/icons/arrow-cool-white.svg"
+                                    width="18"
+                                    height="18"
+                                    loading="lazy"
+                                    alt=""
+                                />
                             </a>
                         </div>
                         <div class="card-text">
@@ -135,10 +178,26 @@
                     </li>
                     <li class="card">
                         <div class="card-img-box">
-                            <img src="assets/projects/github/cover.webp" alt="" width="300" height="300" loading="lazy" />
-                            <a href="./pages/projects/index.html" class="card-button">
+                            <img
+                                src="assets/projects/github/cover.webp"
+                                alt="Capa do projeto"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            />
+                            <a
+                                href="./pages/projects/index.html"
+                                class="card-button"
+                                aria-label="Ver mais informações sobre o projeto [name]"
+                            >
                                 Ver mais
-                                <img src="./assets/icons/arrow-cool-white.svg" width="18" height="18" loading="lazy" />
+                                <img
+                                    src="./assets/icons/arrow-cool-white.svg"
+                                    width="18"
+                                    height="18"
+                                    loading="lazy"
+                                    alt=""
+                                />
                             </a>
                         </div>
                         <div class="card-text">
@@ -148,10 +207,26 @@
                     </li>
                     <li class="card">
                         <div class="card-img-box">
-                            <img src="assets/projects/github/cover.webp" alt="" width="300" height="300" loading="lazy" />
-                            <a href="./pages/projects/index.html" class="card-button">
+                            <img
+                                src="assets/projects/github/cover.webp"
+                                alt="Capa do projeto"
+                                width="300"
+                                height="300"
+                                loading="lazy"
+                            />
+                            <a
+                                href="./pages/projects/index.html"
+                                class="card-button"
+                                aria-label="Ver mais informações sobre o projeto [name]"
+                            >
                                 Ver mais
-                                <img src="./assets/icons/arrow-cool-white.svg" width="18" height="18" loading="lazy" />
+                                <img
+                                    src="./assets/icons/arrow-cool-white.svg"
+                                    width="18"
+                                    height="18"
+                                    loading="lazy"
+                                    alt=""
+                                />
                             </a>
                         </div>
                         <div class="card-text">
@@ -164,19 +239,20 @@
                 <footer>
                     <ul class="carousel-indicators">
                         <li>
-                            <button class="current"></button>
+                            <button class="current" aria-label="Ir para o primeiro projeto do carrocel"></button>
+                        </li>
+
+                        <li>
+                            <button aria-label="Ir para o segundo projeto do carrocel"></button>
                         </li>
                         <li>
-                            <button></button>
+                            <button aria-label="Ir para o terceiro projeto do carrocel"></button>
                         </li>
                         <li>
-                            <button></button>
+                            <button aria-label="Ir para o quarto projeto do carrocel"></button>
                         </li>
                         <li>
-                            <button></button>
-                        </li>
-                        <li>
-                            <button></button>
+                            <button aria-label="Ir para o quinto projeto do carrocel"></button>
                         </li>
                     </ul>
                     <a href="./pages/all-projects/index.html">Ver todos os projetos</a>
@@ -184,7 +260,7 @@
             </div>
         </section>
 
-        <section id="tools" aria-label="Ferramentas" class="padding-container">
+        <section id="tools" class="padding-container" aria-label="Ferramentas que uso no meu trabalho" role="region">
             <div class="main-container">
                 <div>
                     <h2>
@@ -196,7 +272,13 @@
                 </div>
                 <ul>
                     <li class="tool" data-name="React">
-                        <img src="./assets/tech-icons/react.svg" alt="ícone de tecnologia" width="40" height="40" loading="lazy" />
+                        <img
+                            src="./assets/tech-icons/react.svg"
+                            alt="ícone de tecnologia"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                        />
                     </li>
                     <li class="tool" data-name="Typescript">
                         <img
@@ -226,19 +308,49 @@
                         />
                     </li>
                     <li class="tool" data-name="SASS">
-                        <img src="./assets/tech-icons/sass.svg" alt="ícone de tecnologia" width="40" height="40" loading="lazy" />
+                        <img
+                            src="./assets/tech-icons/sass.svg"
+                            alt="ícone de tecnologia"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                        />
                     </li>
                     <li class="tool" data-name="CSS">
-                        <img src="./assets/tech-icons/css.svg" alt="ícone de tecnologia" width="40" height="40" loading="lazy" />
+                        <img
+                            src="./assets/tech-icons/css.svg"
+                            alt="ícone de tecnologia"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                        />
                     </li>
                     <li class="tool" data-name="HTML">
-                        <img src="./assets/tech-icons/html.svg" alt="ícone de tecnologia" width="40" height="40"  loading="lazy"/>
+                        <img
+                            src="./assets/tech-icons/html.svg"
+                            alt="ícone de tecnologia"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                        />
                     </li>
                     <li class="tool" data-name="Figma">
-                        <img src="./assets/tech-icons/figma.svg" alt="ícone de tecnologia" width="40" height="40" loading="lazy" />
+                        <img
+                            src="./assets/tech-icons/figma.svg"
+                            alt="ícone de tecnologia"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                        />
                     </li>
                     <li class="tool" data-name="Github">
-                        <img src="./assets/tech-icons/github.svg" alt="ícone de tecnologia" width="40" height="40" loading="lazy" />
+                        <img
+                            src="./assets/tech-icons/github.svg"
+                            alt="ícone de tecnologia"
+                            width="40"
+                            height="40"
+                            loading="lazy"
+                        />
                     </li>
                 </ul>
             </div>
@@ -256,7 +368,7 @@
 
             <ul>
                 <li class="service-card">
-                    <img src="./assets/icons/dev-web.svg" alt="Navegador web" width="60" height="60"  loading="lazy" />
+                    <img src="./assets/icons/dev-web.svg" alt="Navegador web" width="60" height="60" loading="lazy" />
                     <h3>Desenvolvimento WEB</h3>
                     <p>Sites modernos, rápidos e responsivos.</p>
                     <ul>
@@ -266,11 +378,17 @@
                         <li class="service-card-item">Web app</li>
                         <li class="service-card-item">Web site</li>
                     </ul>
-                    <a href="#contact">Vamos conversar ?</a>
+                    <a href="#contact" aria-label="Ir para a seção de contato">Vamos conversar ?</a>
                 </li>
 
                 <li class="service-card">
-                    <img src="./assets/icons/design-pen.svg" alt="Mão desenhado" width="60" height="60" loading="lazy" />
+                    <img
+                        src="./assets/icons/design-pen.svg"
+                        alt="Mão desenhado"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                    />
 
                     <h3>UX/UI Design</h3>
                     <p>Interfaces claras e funcionais.</p>
@@ -281,7 +399,7 @@
                         <li class="service-card-item">Ui</li>
                         <li class="service-card-item">identidade</li>
                     </ul>
-                    <a href="#contact">Vamos conversar ?</a>
+                    <a href="#contact" aria-label="Ir para a seção de contato">Vamos conversar ?</a>
                 </li>
                 <li class="service-card">
                     <img
@@ -301,7 +419,7 @@
                         <li class="service-card-item">Atualização</li>
                         <li class="service-card-item">Otimização</li>
                     </ul>
-                    <a href="#contact">Vamos conversar ?</a>
+                    <a href="#contact" aria-label="Ir para a seção de contato">Vamos conversar ?</a>
                 </li>
             </ul>
         </section>
@@ -399,7 +517,13 @@
                         <div class="home-feedback-buttons">
                             <a href="./pages/feedback/index.html">
                                 Deixe seu Feedback
-                                <img src="./assets/icons/click.svg" alt="seta de click" width="24" height="24" loading="lazy" />
+                                <img
+                                    src="./assets/icons/click.svg"
+                                    alt="seta de click"
+                                    width="24"
+                                    height="24"
+                                    loading="lazy"
+                                />
                             </a>
                             <a href="./pages/feedback/index.html">Veja todos os feedbacks</a>
                         </div>
@@ -412,6 +536,7 @@
                             href="https://www.linkedin.com/in/eduardonobrrega/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="Perfil no linkedin"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                                 <path
@@ -421,8 +546,14 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
-                        <a href="https://github.com/eduardonobrega" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://github.com/eduardonobrega"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Perfil no GitHub"
+                        >
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 128 128">
                                 <g fill="#9e9e9e">
                                     <path
@@ -437,8 +568,13 @@
                             </svg>
                         </a>
                     </li>
+
                     <li>
-                        <a href="pages/message/index.html" class="message-link">
+                        <a
+                            href="pages/message/index.html"
+                            class="message-link"
+                            aria-label="Acessar página com uma mensagem surpresa para você"
+                        >
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                                 <g fill="none" stroke="#7B5FFF" stroke-width="1">
                                     <path
