@@ -2,6 +2,7 @@
 @import url(../../../styles/components/close-btn.css);
 @import url(filter-list.css);
 @import url(projects.css);
+@import url(aside.css);
 
 .close-btn {
     position: absolute;
@@ -15,20 +16,20 @@ body {
     position: relative;
 }
 
-header {
+body > header {
     padding: 8rem 0 4rem;
     margin-bottom: 4rem;
     border-bottom: 1px solid var(--gray-300);
 }
 
-h1 {
+body > header h1 {
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
-header p {
+body > header p {
     color: var(--gray-800);
 }
 

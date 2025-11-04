@@ -1,0 +1,225 @@
+body:has(#filters-panel.active) {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.overlay:has(+ #filters-panel.active) {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#filters-panel {
+    background-color: var(--gray-50);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+
+    width: 52rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -600px;
+    z-index: 11;
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#filters-panel.active {
+    right: 0;
+}
+
+#filters-panel header {
+    background-color: var(--gray-200);
+    border-bottom: 1px solid var(--gray-300);
+    padding: 1.6rem 3.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filters-panel header h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#filters-panel header button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    appearance: none;
+
+    width: 4rem;
+    height: 4rem;
+}
+
+#filters-panel header button:hover svg path,
+#filters-panel header button:focus svg path {
+    fill: var(--gray-400);
+}
+
+#filters-panel form {
+    padding: 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    flex: 1;
+    overflow: auto;
+
+    padding-bottom: 14rem;
+}
+
+#filters-panel form fieldset {
+    appearance: none;
+    border: none;
+}
+
+#filters-panel form fieldset legend {
+    color: var(--gray-700);
+    font-weight: 500;
+}
+
+.filters-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.6rem;
+}
+
+.filter-checkbox {
+    color: var(--gray-800);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+    border: 1px solid var(--gray-400);
+    border-radius: 2rem;
+    padding: 0.4rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: fit-content;
+    min-height: 2.8rem;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.filter-checkbox:hover,
+.filter-checkbox:focus-within {
+    border-color: var(--gray-800);
+}
+
+.filter-remove-btn {
+    display: none;
+}
+
+.filter-checkbox:has(input:checked) {
+    padding: 0.4rem 0.6rem 0.4rem 1.2rem;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--gray-50);
+}
+
+.filter-checkbox:has(input:checked) .filter-remove-btn {
+    display: block;
+}
+
+#area .filter-checkbox:has(input:checked) svg path {
+    stroke: var(--gray-50);
+}
+
+.filter-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#filters-panel footer {
+    background-color: var(--gray-200);
+
+    border-top: 1px solid var(--gray-300);
+    padding: 4rem 3.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.filters-clear,
+.filters-apply {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+}
+
+.filters-clear {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--gray-800);
+}
+
+.filters-clear:hover,
+.filters-clear:focus {
+    color: var(--gray-500);
+    text-decoration: underline;
+}
+
+.filters-apply {
+    font-weight: 500;
+    color: var(--gray-50);
+    background-color: var(--primary-color);
+
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+
+    transition: filter 0.3s;
+}
+
+.filters-apply:hover,
+.filters-apply:focus {
+    filter: brightness(1.2);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+@media (max-width: 400px) {
+    .filter-checkbox {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #filters-panel {
+        width: 100%;
+    }
+}
