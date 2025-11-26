@@ -87,7 +87,7 @@ body:has(#filters-panel.active) {
 }
 
 #filters-panel form fieldset legend {
-    color: var(--c8);
+    color: var(--c9);
     font-weight: 500;
 }
 
@@ -176,6 +176,7 @@ body:has(#filters-panel.active) {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--c9);
+    background: none;
 }
 
 .filters-clear:hover,
