@@ -13,7 +13,7 @@
     --c9: #424242;
     --c10: #212121;
     --c11: #0d0d0d;
-    --c12: #000000;
+    --black: #000000;
 }
 *,
 ::after,
@@ -198,7 +198,7 @@ h1 {
 h2 {
     color: var(--c10);
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     margin: 4rem 0 2rem;
 }
 p {

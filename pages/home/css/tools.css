@@ -10,15 +10,15 @@
 }
 
 #tools h2 {
-    color: var(--c9);
+    color: var(--c7);
     font-size: clamp(3rem, 1.7636rem + 3.8636vw, 6.4rem);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
     text-transform: uppercase;
 }
 
 #tools p {
-    color: var(--c7);
+    color: var(--c5);
 }
 
 #tools ul {

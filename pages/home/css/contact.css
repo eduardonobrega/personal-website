@@ -16,7 +16,7 @@
 }
 .contacts {
     font-size: clamp(2.2rem, 1.2rem + 1.6667vw, 3.2rem);
-    font-weight: 600;
+    font-weight: 500;
 
     display: flex;
     flex-direction: column;

@@ -18,7 +18,7 @@
 #introduction h1 {
     font-size: clamp(3.2rem, 2.6182rem + 1.8182vw, 4.8rem);
     line-height: 1.25;
-    font-weight: 700;
+    font-weight: 600;
     grid-column: 1 / -1;
     white-space: nowrap;
 }

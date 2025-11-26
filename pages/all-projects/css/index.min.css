@@ -13,7 +13,7 @@
     --c9: #424242;
     --c10: #212121;
     --c11: #0d0d0d;
-    --c12: #000000;
+    --black: #000000;
 }
 *,
 ::after,
@@ -406,7 +406,7 @@ body > header {
 body > header h1 {
     color: var(--primary-color);
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2rem;
 }
 body > header p {

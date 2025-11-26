@@ -15,11 +15,11 @@
 
 .service-card h3 {
     font-size: clamp(2.4rem, 2.2545rem + 0.4545vw, 2.8rem);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
 }
 .service-card p {
-    color: var(--c8);
+    color: var(--c9);
     margin: 2rem 0 4rem;
 }
 
@@ -48,7 +48,7 @@
 .service-card-item {
     background-color: var(--c7);
     color: var(--w);
-    font-weight: 600;
+    font-weight: 500;
 
     padding: 0.4rem 0.8rem;
     border-radius: 0.5rem;
