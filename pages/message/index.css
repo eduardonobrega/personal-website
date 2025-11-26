@@ -31,7 +31,7 @@ h1 {
 
 p {
     font-size: clamp(1.6rem, 1.4061rem + 0.6061vw, 1.8rem);
-    color: var(--gray-800);
+    color: var(--c9);
     max-width: 65ch;
     margin: 0 auto;
 }
@@ -42,7 +42,7 @@ p + p {
 
 p strong {
     font-weight: 700;
-    color: var(--gray-950);
+    color: var(--c11);
 }
 
 a {

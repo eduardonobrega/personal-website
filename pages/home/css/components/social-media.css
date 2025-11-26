@@ -7,7 +7,7 @@
 }
 
 .social-media a svg path {
-    color: var(--gray-500);
+    color: var(--c6);
     transition: fill 0.3s;
 }
 

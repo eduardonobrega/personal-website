@@ -19,7 +19,7 @@ body {
 form {
     max-width: 480px;
     padding: 4rem;
-    background-color: var(--gray-200);
+    background-color: var(--c3);
     min-height: 100vh;
 
     display: flex;

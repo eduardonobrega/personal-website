@@ -1,7 +1,7 @@
 .tool {
-    background: var(--gray-950);
+    background: var(--c11);
     border-radius: 2rem;
-    border: 1px solid var(--gray-800);
+    border: 1px solid var(--c9);
     box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.2);
 
     padding: 2rem;
@@ -21,8 +21,8 @@
     border-radius: 2rem;
     width: max-content;
     font-size: 1rem;
-    background-color: var(--gray-50);
-    border: 1px solid var(--gray-200);
+    background-color: var(--c1);
+    border: 1px solid var(--c3);
     padding: 0.5rem 1rem;
 
     position: absolute;

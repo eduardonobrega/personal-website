@@ -11,19 +11,19 @@
     overflow: hidden; /* corta o texto excedente */
     text-overflow: ellipsis; /* adiciona "..." */
 
-    color: var(--gray-500);
+    color: var(--c6);
     font-style: normal;
 }
 
 .home-feedback-author {
     grid-column: 2;
     font-size: 1rem;
-    color: var(--gray-700);
+    color: var(--c8);
 }
 
 .home-feedback-author strong {
     font-weight: 700;
-    color: var(--gray-600);
+    color: var(--c7);
 }
 
 .home-feedback-item img {
@@ -61,7 +61,7 @@
 }
 
 .home-feedback-buttons a:last-child {
-    color: var(--gray-700);
+    color: var(--c8);
     font-size: 1rem;
 
     display: block;

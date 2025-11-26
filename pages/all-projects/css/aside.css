@@ -19,7 +19,7 @@ body:has(#filters-panel.active) {
 }
 
 #filters-panel {
-    background-color: var(--gray-50);
+    background-color: var(--c1);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
 
@@ -40,8 +40,8 @@ body:has(#filters-panel.active) {
 }
 
 #filters-panel header {
-    background-color: var(--gray-200);
-    border-bottom: 1px solid var(--gray-300);
+    background-color: var(--c3);
+    border-bottom: 1px solid var(--c4);
     padding: 1.6rem 3.2rem;
 
     display: flex;
@@ -66,7 +66,7 @@ body:has(#filters-panel.active) {
 
 #filters-panel header button:hover svg path,
 #filters-panel header button:focus svg path {
-    fill: var(--gray-400);
+    fill: var(--c5);
 }
 
 #filters-panel form {
@@ -87,7 +87,7 @@ body:has(#filters-panel.active) {
 }
 
 #filters-panel form fieldset legend {
-    color: var(--gray-700);
+    color: var(--c8);
     font-weight: 500;
 }
 
@@ -99,13 +99,13 @@ body:has(#filters-panel.active) {
 }
 
 .filter-checkbox {
-    color: var(--gray-800);
+    color: var(--c9);
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.6px;
 
-    border: 1px solid var(--gray-400);
+    border: 1px solid var(--c5);
     border-radius: 2rem;
     padding: 0.4rem 1.2rem;
 
@@ -121,7 +121,7 @@ body:has(#filters-panel.active) {
 
 .filter-checkbox:hover,
 .filter-checkbox:focus-within {
-    border-color: var(--gray-800);
+    border-color: var(--c9);
 }
 
 .filter-remove-btn {
@@ -132,7 +132,7 @@ body:has(#filters-panel.active) {
     padding: 0.4rem 0.6rem 0.4rem 1.2rem;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: var(--gray-50);
+    color: var(--c1);
 }
 
 .filter-checkbox:has(input:checked) .filter-remove-btn {
@@ -140,7 +140,7 @@ body:has(#filters-panel.active) {
 }
 
 #area .filter-checkbox:has(input:checked) svg path {
-    stroke: var(--gray-50);
+    stroke: var(--c1);
 }
 
 .filter-checkbox input {
@@ -150,9 +150,9 @@ body:has(#filters-panel.active) {
 }
 
 #filters-panel footer {
-    background-color: var(--gray-200);
+    background-color: var(--c3);
 
-    border-top: 1px solid var(--gray-300);
+    border-top: 1px solid var(--c4);
     padding: 4rem 3.2rem;
 
     display: flex;
@@ -175,18 +175,18 @@ body:has(#filters-panel.active) {
 .filters-clear {
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--gray-800);
+    color: var(--c9);
 }
 
 .filters-clear:hover,
 .filters-clear:focus {
-    color: var(--gray-500);
+    color: var(--c6);
     text-decoration: underline;
 }
 
 .filters-apply {
     font-weight: 500;
-    color: var(--gray-50);
+    color: var(--c1);
     background-color: var(--primary-color);
 
     border-radius: 1rem;

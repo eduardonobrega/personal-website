@@ -1,5 +1,5 @@
 #tools {
-    background-color: var(--gray-950);
+    background-color: var(--c11);
     overflow: hidden;
 }
 
@@ -10,7 +10,7 @@
 }
 
 #tools h2 {
-    color: var(--gray-800);
+    color: var(--c9);
     font-size: clamp(3rem, 1.7636rem + 3.8636vw, 6.4rem);
     font-weight: 600;
     line-height: 1.25;
@@ -18,7 +18,7 @@
 }
 
 #tools p {
-    color: var(--gray-600);
+    color: var(--c7);
 }
 
 #tools ul {
@@ -39,11 +39,11 @@
     #tools h2 {
         text-align: center;
         text-transform: none;
-        color: var(--gray-200);
+        color: var(--c3);
     }
 
     #tools p {
-        color: var(--gray-500);
+        color: var(--c6);
     }
 
     #tools ul {

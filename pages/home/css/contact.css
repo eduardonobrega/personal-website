@@ -1,12 +1,12 @@
 #contact {
-    background-color: var(--gray-950);
+    background-color: var(--c11);
     padding-top: 12rem;
     overflow: hidden;
-    color: var(--gray-50);
+    color: var(--c1);
 }
 
 #contact:target .contacts {
-    animation: wobble-hor-bottom 0.8s .4s both;
+    animation: wobble-hor-bottom 0.8s 0.4s both;
 }
 
 #contact > .main-container > div {

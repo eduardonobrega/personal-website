@@ -12,9 +12,9 @@
 
 .project-card {
     display: block;
-    background-color: var(--gray-100);
+    background-color: var(--c2);
 
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--c3);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
     overflow: hidden;
@@ -27,8 +27,8 @@
 
 .project-card:hover,
 .project-card:focus-within {
-    background-color: var(--gray-300);
-    border-color: var(--gray-500);
+    background-color: var(--c4);
+    border-color: var(--c6);
 }
 
 .project-card a > img {
@@ -48,7 +48,7 @@
 }
 
 .project-name {
-    color: var(--gray-500);
+    color: var(--c6);
     font-size: 1.4rem;
     letter-spacing: 0.42px;
     text-transform: uppercase;
@@ -65,8 +65,8 @@
 }
 
 .tag {
-    background-color: var(--gray-300);
-    color: var(--gray-600);
+    background-color: var(--c4);
+    color: var(--c7);
     font-size: 1.2rem;
     font-weight: 500;
 

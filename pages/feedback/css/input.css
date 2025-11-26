@@ -1,5 +1,5 @@
 label {
-    color: var(--gray-900);
+    color: var(--c10);
     font-weight: 500;
     width: 100%;
     display: inline-flex;
@@ -13,9 +13,9 @@ label {
 
 input,
 textarea {
-    background-color: var(--gray-50);
-    color: var(--gray-950);
-    border: 1px solid var(--gray-300);
+    background-color: var(--c1);
+    color: var(--c11);
+    border: 1px solid var(--c4);
     border-radius: 5px;
 
     width: 100%;
@@ -24,7 +24,7 @@ textarea {
 }
 
 ::placeholder {
-    color: var(--gray-500);
+    color: var(--c6);
 }
 
 textarea {

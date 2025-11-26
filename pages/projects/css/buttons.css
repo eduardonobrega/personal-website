@@ -18,7 +18,7 @@ main a {
 }
 
 .project-buttons a {
-    color: var(--gray-50);
+    color: var(--c1);
     text-transform: uppercase;
     letter-spacing: 0.48px;
 
@@ -46,7 +46,7 @@ main a:focus {
 }
 
 .contact-btn {
-    color: var(--gray-50);
+    color: var(--c1);
     background-color: var(--primary-color);
     font-weight: 500;
     text-transform: uppercase;

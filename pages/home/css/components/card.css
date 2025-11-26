@@ -71,14 +71,14 @@
 }
 
 .card-text h3 {
-    color: var(--gray-950);
+    color: var(--c11);
     font-size: 1.8rem;
     font-weight: 700;
     margin: 1rem 0;
 }
 
 .card-text span {
-    color: var(--gray-700);
+    color: var(--c8);
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.42px;
