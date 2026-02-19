@@ -55,7 +55,6 @@
     display: flex;
     gap: 2rem;
     transition: transform 0.5s ease;
-    align-items: center;
     margin: 6rem 0 3rem;
 
     scroll-behavior: smooth;
