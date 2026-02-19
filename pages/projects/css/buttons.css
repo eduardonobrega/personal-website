@@ -6,6 +6,7 @@ main a {
     position: fixed;
     top: 1rem;
     right: 5vw;
+    z-index: 1;
 }
 
 .project-buttons {
