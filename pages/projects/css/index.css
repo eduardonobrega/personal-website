@@ -95,23 +95,29 @@ p {
 }
 
 .gallery figure {
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.gallery figure:has(.img-wrapper.mobile-screen) {
-    max-width: 400px;
+.gallery figure:hover {
+    transform: translateY(-6px);
+}
+
+.gallery figure[data-type="mobile"] {
+    max-width: 338px;
 }
 
 .gallery img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    object-position: center top;
 }
 
-.gallery .img-wrapper.mobile-screen {
+.gallery figure[data-type="mobile"] .img-wrapper {
     aspect-ratio: 9 / 16;
 }
 

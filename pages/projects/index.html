@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
@@ -10,20 +10,29 @@
             rel="stylesheet"
         />
         <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
-        <link rel="preload" href="./css/index.min.css" as="style" />
-        <link rel="stylesheet" href="./css/index.min.css" />
+        <link rel="preload" href="./css/index.css" as="style" />
+        <link rel="stylesheet" href="./css/index.css" />
         <title>Eduardo Nóbrega | Projeto</title>
     </head>
     <body>
-        <a href="../../index.html" class="close-btn" onclick="if (document.referrer) { history.back(); return false; }">
+        <a
+            href="../../index.html"
+            class="close-btn"
+            onclick="
+                if (document.referrer) {
+                    history.back()
+                    return false
+                }
+            "
+        >
             <img src="../../assets/icons/close.svg" width="30" height="30" alt="ícone de um x" loading="lazy" />
         </a>
         <main>
-            <h1>Mundo pet</h1>
-            <p class="short-description">Site para agendamento</p>
+            <h1></h1>
+            <p class="short-description"></p>
 
             <ul class="tech-list">
-                <li class="tech-item">
+                <!-- <li class="tech-item">
                     <img
                         src="../../assets/tech-icons/javascript.svg"
                         alt="ícone de tecnologia"
@@ -32,58 +41,7 @@
                         loading="lazy"
                     />
                     javascript
-                </li>
-                <li class="tech-item">
-                    <img
-                        src="../../assets/tech-icons/typescript.svg"
-                        alt="ícone de tecnologia"
-                        width="14"
-                        height="14"
-                        loading="lazy"
-                    />
-                    typescript
-                </li>
-                <li class="tech-item">
-                    <img
-                        src="../../assets/tech-icons/nodejs.svg"
-                        alt="ícone de tecnologia"
-                        width="14"
-                        height="14"
-                        loading="lazy"
-                    />
-                    nodejs
-                </li>
-                <li class="tech-item">
-                    <img
-                        src="../../assets/tech-icons/react.svg"
-                        alt="ícone de tecnologia"
-                        width="14"
-                        height="14"
-                        loading="lazy"
-                    />
-                    react
-                </li>
-
-                <li class="tech-item">
-                    <img
-                        src="../../assets/tech-icons/html.svg"
-                        alt="ícone de tecnologia"
-                        width="14"
-                        height="14"
-                        loading="lazy"
-                    />
-                    html
-                </li>
-                <li class="tech-item">
-                    <img
-                        src="../../assets/tech-icons/css.svg"
-                        alt="ícone de tecnologia"
-                        width="14"
-                        height="14"
-                        loading="lazy"
-                    />
-                    css
-                </li>
+                </li> -->
             </ul>
 
             <div class="project-buttons">
@@ -119,40 +77,14 @@
                 </a>
             </div>
 
-            <div class="text">
-                <h2>Qual problema resolve ?</h2>
-                <p>
-                    O sistema foi criado para resolver a dificuldade que pet shops enfrentam na organização de
-                    agendamentos de serviçossd. O sistema centraliza todos os agendamentos, permitindo que os clientes
-                    escolham o serviço, o horário e o profissional disponível de forma simples e rápida — melhorando a
-                    gestão e a experiência do cliente.
-                </p>
-
-                <h2>Desafios e Soluções</h2>
-                <p>
-                    Este sistema foi desenvolvido para ajudar empresas a gerenciar seus produtos de maneira eficiente,
-                    oferecendo ferramentas avançadas para controle de estoque, registro de produtos, comparação de
-                    preços e organização por categorias e variações.
-                </p>
-
-                <h2>Meu papel no projeto</h2>
-                <ul>
-                    <li>Desenvolvimento do frontend (React + Styled Components)</li>
-
-                    <li>Implementação do backend (Node.js + Express + PostgreSQL)</li>
-                    <li>
-                        Criação do banco de dados relacional com relacionamentos entre pets, clientes e agendamentos
-                    </li>
-                    <li>Design da interface responsiva e prototipagem no Figma</li>
-                </ul>
-            </div>
+            <div class="text"></div>
 
             <a href="../../index.html#contact" class="contact-btn">Entrar em contato</a>
         </main>
         <section id="gallery">
             <div>
                 <div class="gallery">
-                    <figure>
+                    <!-- <figure>
                         <div class="img-wrapper">
                             <img
                                 src="../../assets/projects/github/screen-1.webp"
@@ -162,30 +94,11 @@
                         </div>
 
                         <figcaption>Tela inicial</figcaption>
-                    </figure>
-                    <figure>
-                        <div class="img-wrapper">
-                            <img
-                                src="../../assets/projects/github/screen-2.webp"
-                                alt="Tela de agendamentos"
-                                loading="lazy"
-                            />
-                        </div>
-                        <figcaption>Agendamento</figcaption>
-                    </figure>
-                    <figure>
-                        <div class="img-wrapper mobile-screen">
-                            <img
-                                src="../../assets/projects/github/screen-3.webp"
-                                alt="Tela de agendamentos"
-                                loading="lazy"
-                                class=""
-                            />
-                        </div>
-                        <figcaption>Agendamento</figcaption>
-                    </figure>
+                    </figure> -->
                 </div>
             </div>
         </section>
+
+        <script src="../../js/project-page.js" type="module"></script>
     </body>
 </html>
