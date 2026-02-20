@@ -62,4 +62,54 @@ export const projects = [
             },
         ],
     },
+    {
+        id: "wildbeast",
+        title: "Wildbeast",
+        subtitle: "Explorando o poder do CSS Grid.",
+        description:
+            "Landing page desenvolvida para praticar CSS Grid Layout, com foco em estruturação de layout moderno, responsividade e organização visual.",
+
+        tags: {
+            tech: ["html", "css"],
+            area: ["frontend"],
+            type: ["origamid", "curso"],
+        },
+
+        cover: "/assets/projects/wildbeast/capa.jpg",
+        images: [
+            {
+                src: "/assets/projects/wildbeast/tela.jpg",
+                title: "Home",
+            },
+            {
+                src: "/assets/projects/wildbeast/mobile.jpg",
+                title: "Responsivo",
+            },
+        ],
+
+        github: "https://github.com/eduardonobrega/wildbeast",
+        live: "https://eduardonobrega.github.io/wildbeast/",
+
+        pin: true,
+
+        sections: [
+            {
+                type: "text",
+                title: "Objetivo do Projeto",
+                content:
+                    "Projeto desenvolvido para consolidar o uso de CSS Grid na construção de layouts editoriais complexos, com foco em organização estrutural e controle preciso de posicionamento.",
+            },
+
+            {
+                type: "list",
+                title: "Principais Aprendizados",
+                items: [
+                    "Arquitetura de layout com CSS Grid",
+                    "Uso estratégico de grid-template-areas",
+                    "Responsividade com reorganização estrutural",
+                    "Controle de espaçamento e hierarquia visual",
+                ],
+            },
+        ],
+    },
 ]
