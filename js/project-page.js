@@ -19,13 +19,13 @@ document.querySelector(".short-description").textContent = project.subtitle
 // Lista de tecnologias
 const fragment = document.createDocumentFragment()
 
-project.technologies.forEach(tech => {
+project.tags.tech.forEach(tech => {
     const li = document.createElement("li")
     const img = document.createElement("img")
     const span = document.createElement("span")
 
     li.classList.add("tech-item")
-    img.src = `../../assets/tech-icons/${tech.toLowerCase()}.svg`
+    img.src = `../../assets/icons/tech/${tech.toLowerCase()}.svg`
     img.alt = `ícone da tech ${tech}`
     img.width = 14
     img.height = 14
@@ -89,8 +89,8 @@ project.images.forEach(image => {
 
     figcaption.textContent = image.title
 
-    if (image.src.includes('mobile')) {
-        figure.setAttribute('data-type', 'mobile')
+    if (image.src.includes("mobile")) {
+        figure.setAttribute("data-type", "mobile")
     }
 
     figure.append(imgWrapper, figcaption)

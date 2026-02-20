@@ -6,9 +6,13 @@ export const projects = [
         description:
             "Plataforma institucional e comercial para venda de bicicletas elétricas personalizadas e planos de seguro.",
 
-        technologies: ["html", "css", "javascript", "figma"],
+        tags: {
+            tech: ["html", "css", "javascript", "figma"],
+            area: ["frontend", "design"],
+            type: ["origamid", "curso"],
+        },
 
-        cover: "../assets/projects/bikcraft/capa.jpg",
+        cover: "/assets/projects/bikcraft/capa.jpg",
         images: [
             {
                 src: "/assets/projects/bikcraft/home.jpg",
