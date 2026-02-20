@@ -62,6 +62,7 @@ export const projects = [
             },
         ],
     },
+
     {
         id: "wildbeast",
         title: "Wildbeast",
@@ -108,6 +109,104 @@ export const projects = [
                     "Uso estratégico de grid-template-areas",
                     "Responsividade com reorganização estrutural",
                     "Controle de espaçamento e hierarquia visual",
+                ],
+            },
+        ],
+    },
+
+    {
+        id: "flexblog",
+        title: "FlexBlog",
+        subtitle: "Layouts flexíveis com CSS Flexbox.",
+        description:
+            "Projeto desenvolvido para praticar CSS Flexbox na criação de layouts responsivos, explorando alinhamento, distribuição de espaço e organização de componentes.",
+
+        tags: {
+            tech: ["html", "css"],
+            area: ["frontend"],
+            type: ["origamid", "curso"],
+        },
+
+        cover: "/assets/projects/flexblog/tela.jpg",
+        images: [
+            {
+                src: "/assets/projects/flexblog/tela.jpg",
+                title: "Home",
+            },
+            {
+                src: "/assets/projects/flexblog/mobile.jpg",
+                title: "Responsivo",
+            },
+        ],
+
+        github: "https://github.com/eduardonobrega/FlexBlog",
+        live: "https://eduardonobrega.github.io/FlexBlog/",
+
+        pin: true,
+
+        sections: [
+            {
+                type: "text",
+                title: "Objetivo do Projeto",
+                content:
+                    "Projeto criado para aprofundar o domínio de CSS Flexbox na construção de layouts adaptáveis, com foco em alinhamento, distribuição de elementos e organização de seções.",
+            },
+
+            {
+                type: "list",
+                title: "Principais Aprendizados",
+                items: [
+                    "Alinhamento e distribuição com Flexbox",
+                    "Controle de eixo principal e eixo cruzado",
+                    "Construção de componentes reutilizáveis",
+                    "Responsividade baseada em flex-wrap e media queries",
+                ],
+            },
+        ],
+    },
+
+    {
+        id: "form",
+        title: "Formulário",
+        subtitle: "Estruturação semântica de formulários com HTML e CSS.",
+        description:
+            "Projeto desenvolvido na Formação Fullstack com foco na construção de formulários utilizando marcação semântica, organização visual e boas práticas de acessibilidade.",
+
+        tags: {
+            tech: ["html", "css"],
+            area: ["frontend"],
+            type: ["rocketseat", "curso"],
+        },
+
+        cover: "/assets/projects/form/capa.jpg",
+        images: [
+            {
+                src: "/assets/projects/form/tela.jpg",
+                title: "Formulário",
+            },
+        ],
+
+        github: "https://github.com/eduardonobrega/formacao-fullstack/tree/main/form",
+        live: "",
+
+        pin: false,
+
+        sections: [
+            {
+                type: "text",
+                title: "Objetivo do Projeto",
+                content:
+                    "Construir um formulário aplicando boas práticas de HTML semântico e organização visual com CSS, garantindo clareza estrutural e boa experiência de uso.",
+            },
+
+            {
+                type: "list",
+                title: "Principais Aprendizados",
+                items: [
+                    "Estruturação semântica com labels e inputs",
+                    "Organização visual de campos e grupos",
+                    "Estilização consistente de formulários",
+                    "Atenção à hierarquia e legibilidade",
                 ],
             },
         ],
