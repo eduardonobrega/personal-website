@@ -168,7 +168,7 @@ export const projects = [
     {
         id: "form",
         title: "Formulário",
-        subtitle: "Estruturação semântica de formulários com HTML e CSS.",
+        subtitle: "Formulários semânticos com HTML e CSS.",
         description:
             "Projeto desenvolvido na Formação Fullstack com foco na construção de formulários utilizando marcação semântica, organização visual e boas práticas de acessibilidade.",
 
@@ -178,7 +178,7 @@ export const projects = [
             type: ["rocketseat", "curso"],
         },
 
-        cover: "/assets/projects/form/capa.jpg",
+        cover: "/assets/projects/form/tela.jpg",
         images: [
             {
                 src: "/assets/projects/form/tela.jpg",
@@ -187,7 +187,7 @@ export const projects = [
         ],
 
         github: "https://github.com/eduardonobrega/formacao-fullstack/tree/main/form",
-        live: "",
+        live: "https://form-edu.vercel.app/",
 
         pin: false,
 
@@ -207,6 +207,59 @@ export const projects = [
                     "Organização visual de campos e grupos",
                     "Estilização consistente de formulários",
                     "Atenção à hierarquia e legibilidade",
+                ],
+            },
+        ],
+    },
+
+    {
+        id: "lista-de-compras",
+        title: "Lista de Compras",
+        subtitle: "Gerenciamento dinâmico de itens com JavaScript.",
+        description:
+            "Aplicação desenvolvida na Formação Fullstack com foco em manipulação de DOM e lógica em JavaScript para adicionar e remover itens dinamicamente.",
+
+        tags: {
+            tech: ["html", "css", "javascript"],
+            area: ["frontend"],
+            type: ["rocketseat", "curso"],
+        },
+
+        cover: "/assets/projects/lista-de-compras/tela.jpg",
+        images: [
+            {
+                src: "/assets/projects/lista-de-compras/tela.jpg",
+                title: "Interface",
+            },
+        ],
+
+        github: "https://github.com/eduardonobrega/formacao-fullstack/tree/main/lista-de-compras",
+        live: "https://lista-de-compras-sand-eight.vercel.app/",
+
+        pin: true,
+
+        sections: [
+            {
+                type: "text",
+                title: "Sobre o Projeto",
+                content:
+                    "Aplicação interativa desenvolvida para praticar lógica com JavaScript e manipulação direta do DOM, permitindo adicionar e remover itens em tempo real.",
+            },
+
+            {
+                type: "text",
+                title: "Abordagem Técnica",
+                content:
+                    "A estrutura foi construída com HTML semântico e estilizada com CSS. A dinâmica da aplicação é controlada por eventos, capturando ações do usuário para criar e remover elementos da lista.",
+            },
+
+            {
+                type: "list",
+                title: "Competências Exercitadas",
+                items: [
+                    "Manipulação dinâmica de elementos no DOM",
+                    "Tratamento de eventos",
+                    "Persistência de dados usando o Local Storage",
                 ],
             },
         ],
